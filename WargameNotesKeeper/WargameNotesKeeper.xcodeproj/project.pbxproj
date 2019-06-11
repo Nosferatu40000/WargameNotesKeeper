@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,8 @@
 		A3DF97E122AFF39200A59924 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3DF97DF22AFF39200A59924 /* Main.storyboard */; };
 		A3DF97E322AFF39400A59924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3DF97E222AFF39400A59924 /* Assets.xcassets */; };
 		A3DF97E622AFF39400A59924 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3DF97E422AFF39400A59924 /* LaunchScreen.storyboard */; };
+		A3DF97F122AFF8EF00A59924 /* Operands.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DF97F022AFF8EF00A59924 /* Operands.swift */; };
+		A3DF97F322AFF91400A59924 /* String+Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DF97F222AFF91400A59924 /* String+Int.swift */; };
 		D166069BFEB883D6D3D2F365 /* Pods_WargameNotesKeeper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4231C3DF4A8D0498E83E2E8 /* Pods_WargameNotesKeeper.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,8 @@
 		A3DF97E222AFF39400A59924 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3DF97E522AFF39400A59924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3DF97E722AFF39400A59924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3DF97F022AFF8EF00A59924 /* Operands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operands.swift; sourceTree = "<group>"; };
+		A3DF97F222AFF91400A59924 /* String+Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Int.swift"; sourceTree = "<group>"; };
 		B1C891672D8D1D68D0CAA4CC /* Pods-WargameNotesKeeper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WargameNotesKeeper.release.xcconfig"; path = "Target Support Files/Pods-WargameNotesKeeper/Pods-WargameNotesKeeper.release.xcconfig"; sourceTree = "<group>"; };
 		B764E2735CEBEAB9C0C13194 /* Pods-WargameNotesKeeper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WargameNotesKeeper.debug.xcconfig"; path = "Target Support Files/Pods-WargameNotesKeeper/Pods-WargameNotesKeeper.debug.xcconfig"; sourceTree = "<group>"; };
 		C4231C3DF4A8D0498E83E2E8 /* Pods_WargameNotesKeeper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WargameNotesKeeper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,7 +50,6 @@
 				B764E2735CEBEAB9C0C13194 /* Pods-WargameNotesKeeper.debug.xcconfig */,
 				B1C891672D8D1D68D0CAA4CC /* Pods-WargameNotesKeeper.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -71,6 +74,9 @@
 		A3DF97DA22AFF39200A59924 /* WargameNotesKeeper */ = {
 			isa = PBXGroup;
 			children = (
+				A3DF97EF22AFF88D00A59924 /* Extentions */,
+				A3DF97EE22AFF72B00A59924 /* Modules */,
+				A3DF97ED22AFF71C00A59924 /* Operands */,
 				A3DF97DB22AFF39200A59924 /* AppDelegate.swift */,
 				A3DF97DD22AFF39200A59924 /* ViewController.swift */,
 				A3DF97DF22AFF39200A59924 /* Main.storyboard */,
@@ -79,6 +85,29 @@
 				A3DF97E722AFF39400A59924 /* Info.plist */,
 			);
 			path = WargameNotesKeeper;
+			sourceTree = "<group>";
+		};
+		A3DF97ED22AFF71C00A59924 /* Operands */ = {
+			isa = PBXGroup;
+			children = (
+				A3DF97F022AFF8EF00A59924 /* Operands.swift */,
+			);
+			path = Operands;
+			sourceTree = "<group>";
+		};
+		A3DF97EE22AFF72B00A59924 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A3DF97EF22AFF88D00A59924 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				A3DF97F222AFF91400A59924 /* String+Int.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 		CB346717DCC50FAEB1D25341 /* Frameworks */ = {
@@ -204,7 +233,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3DF97F322AFF91400A59924 /* String+Int.swift in Sources */,
 				A3DF97DE22AFF39200A59924 /* ViewController.swift in Sources */,
+				A3DF97F122AFF8EF00A59924 /* Operands.swift in Sources */,
 				A3DF97DC22AFF39200A59924 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
