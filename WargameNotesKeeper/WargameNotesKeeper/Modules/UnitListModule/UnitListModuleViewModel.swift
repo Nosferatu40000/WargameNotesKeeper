@@ -11,7 +11,8 @@ import Foundation
 class UnitListModuleViewModel: ModuleViewModel {
     
     var interactor: UnitListModuleInteractor!
-
+    var database: DatabaseService!
+    
     // MARK: ModuleViewModel
     var rowViewModels: [RowViewModel]?
     func updateRows() {

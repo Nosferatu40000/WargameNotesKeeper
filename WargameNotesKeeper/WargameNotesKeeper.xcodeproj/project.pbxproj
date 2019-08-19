@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A36700F4230AE94800806B45 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36700F3230AE94800806B45 /* DatabaseService.swift */; };
+		A39BA6EA230AFE7B00DEE288 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39BA6E9230AFE7B00DEE288 /* ServiceAssembly.swift */; };
+		A39BA6ED230B017400DEE288 /* GameSystemDatabaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39BA6EC230B017400DEE288 /* GameSystemDatabaseObject.swift */; };
+		A39BA6F5230B087900DEE288 /* RoasterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39BA6F4230B087900DEE288 /* RoasterListViewController.swift */; };
+		A39BA6F7230B093E00DEE288 /* RoasterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39BA6F6230B093E00DEE288 /* RoasterListViewModel.swift */; };
+		A39BA6F9230B0A1A00DEE288 /* RoasterDatabaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39BA6F8230B0A1900DEE288 /* RoasterDatabaseObject.swift */; };
 		A3A8ECB322B2A2CA00C55CB5 /* UnitListModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A8ECB222B2A2CA00C55CB5 /* UnitListModuleView.swift */; };
 		A3A8ECB522B2A2DB00C55CB5 /* UnitListModuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A8ECB422B2A2DB00C55CB5 /* UnitListModuleViewModel.swift */; };
 		A3A8ECB722B2A30700C55CB5 /* UnitListModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A8ECB622B2A30700C55CB5 /* UnitListModuleInteractor.swift */; };
@@ -28,6 +34,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A36700F3230AE94800806B45 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		A39BA6E9230AFE7B00DEE288 /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
+		A39BA6EC230B017400DEE288 /* GameSystemDatabaseObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSystemDatabaseObject.swift; sourceTree = "<group>"; };
+		A39BA6F4230B087900DEE288 /* RoasterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoasterListViewController.swift; sourceTree = "<group>"; };
+		A39BA6F6230B093E00DEE288 /* RoasterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoasterListViewModel.swift; sourceTree = "<group>"; };
+		A39BA6F8230B0A1900DEE288 /* RoasterDatabaseObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoasterDatabaseObject.swift; sourceTree = "<group>"; };
 		A3A8ECB222B2A2CA00C55CB5 /* UnitListModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitListModuleView.swift; sourceTree = "<group>"; };
 		A3A8ECB422B2A2DB00C55CB5 /* UnitListModuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitListModuleViewModel.swift; sourceTree = "<group>"; };
 		A3A8ECB622B2A30700C55CB5 /* UnitListModuleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitListModuleInteractor.swift; sourceTree = "<group>"; };
@@ -73,6 +85,33 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A36700F2230AE91800806B45 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				A39BA6EB230B014200DEE288 /* Objects */,
+				A36700F3230AE94800806B45 /* DatabaseService.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		A39BA6EB230B014200DEE288 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				A39BA6EC230B017400DEE288 /* GameSystemDatabaseObject.swift */,
+				A39BA6F8230B0A1900DEE288 /* RoasterDatabaseObject.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		A39BA6F3230B084F00DEE288 /* RoasterListModule */ = {
+			isa = PBXGroup;
+			children = (
+				A39BA6F4230B087900DEE288 /* RoasterListViewController.swift */,
+				A39BA6F6230B093E00DEE288 /* RoasterListViewModel.swift */,
+			);
+			path = RoasterListModule;
+			sourceTree = "<group>";
+		};
 		A3A8ECB122B2A29600C55CB5 /* UnitListModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +140,7 @@
 				A3A8ECC722B2B6B600C55CB5 /* Assembly.swift */,
 				A3A8ECC922B2B6D700C55CB5 /* ModuleViewModel.swift */,
 				A3A8ECCB22B2B8E200C55CB5 /* ViewController.swift */,
+				A39BA6E9230AFE7B00DEE288 /* ServiceAssembly.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -126,6 +166,7 @@
 		A3DF97DA22AFF39200A59924 /* WargameNotesKeeper */ = {
 			isa = PBXGroup;
 			children = (
+				A36700F2230AE91800806B45 /* Database */,
 				A3DF97EF22AFF88D00A59924 /* Extentions */,
 				A3DF97EE22AFF72B00A59924 /* Modules */,
 				A3DF97ED22AFF71C00A59924 /* Operands */,
@@ -151,6 +192,7 @@
 			children = (
 				A3A8ECC622B2B6B600C55CB5 /* Base */,
 				A3A8ECBC22B2A3B500C55CB5 /* Common */,
+				A39BA6F3230B084F00DEE288 /* RoasterListModule */,
 				A3A8ECB122B2A29600C55CB5 /* UnitListModule */,
 			);
 			path = Modules;
@@ -288,14 +330,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3A8ECCC22B2B8E200C55CB5 /* ViewController.swift in Sources */,
+				A39BA6EA230AFE7B00DEE288 /* ServiceAssembly.swift in Sources */,
 				A3A8ECB522B2A2DB00C55CB5 /* UnitListModuleViewModel.swift in Sources */,
 				A3A8ECB322B2A2CA00C55CB5 /* UnitListModuleView.swift in Sources */,
+				A39BA6ED230B017400DEE288 /* GameSystemDatabaseObject.swift in Sources */,
 				A3DF97F322AFF91400A59924 /* String+Int.swift in Sources */,
 				A3A8ECCA22B2B6D700C55CB5 /* ModuleViewModel.swift in Sources */,
 				A3A8ECBE22B2A4D500C55CB5 /* RowsBuilderProtocol.swift in Sources */,
+				A36700F4230AE94800806B45 /* DatabaseService.swift in Sources */,
+				A39BA6F7230B093E00DEE288 /* RoasterListViewModel.swift in Sources */,
+				A39BA6F5230B087900DEE288 /* RoasterListViewController.swift in Sources */,
 				A3A8ECB722B2A30700C55CB5 /* UnitListModuleInteractor.swift in Sources */,
 				A3DF97F122AFF8EF00A59924 /* Operands.swift in Sources */,
 				A3A8ECBB22B2A34300C55CB5 /* UnitListModuleAssembly.swift in Sources */,
+				A39BA6F9230B0A1A00DEE288 /* RoasterDatabaseObject.swift in Sources */,
 				A3A8ECC822B2B6B600C55CB5 /* Assembly.swift in Sources */,
 				A3DF97DC22AFF39200A59924 /* AppDelegate.swift in Sources */,
 				A3A8ECC222B2B46000C55CB5 /* ModuleConfigurable.swift in Sources */,
