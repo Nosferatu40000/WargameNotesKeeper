@@ -7,12 +7,15 @@
 //
 
 import Foundation
+import UIKit
 
 class RoasterListViewModel {
     
+    var interactor: RoasterListInteractor!
     var database: DatabaseService!
     
     var roasters: [RoasterDatabaseObject] = []
+    var rows: [UIView] = []
     
     func viewLoaded() {
         updateRoasterList()
