@@ -13,11 +13,19 @@ class RoasterListViewModel {
     
     var interactor: RoasterListInteractor!
     var database: DatabaseService!
+    var router: RoasterListRouter!
     
     var roasters: [RoasterDatabaseObject] = []
-    var rows: [UIView] = []
+    
+    let moduleTitle = "Roasters"
+    var rightHeaderButtons: [UIBarButtonItem]?
     
     func viewLoaded() {
+        rightHeaderButtons = [UIBarButtonItem.init(title: "⚙", style: .plain, target: self, action: #selector(didTapSettings))]
+    }
+    
+    func viewAppeared() {
+        
         updateRoasterList()
     }
     
@@ -37,4 +45,9 @@ class RoasterListViewModel {
     func didSelectRoaster(_ index: Int) {
         
     }
+    
+    @objc func didTapSettings() {
+        self.router.openSettingsController()
+    }
+    
 }

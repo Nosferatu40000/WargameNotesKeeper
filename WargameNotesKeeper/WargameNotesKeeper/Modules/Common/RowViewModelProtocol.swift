@@ -10,4 +10,6 @@ import Foundation
 
 protocol RowViewModel {
     
+    func nibNameIdentifier() -> String
+    func uniqueRowIdentifier() -> String
 }

@@ -13,12 +13,13 @@ class UnitListModuleView: ViewController {
     
     var viewModel: UnitListModuleViewModel! {
         didSet {
-            viewModel.buldRows()
-            subscribeOnChanges()
+            setViewModel(viewModel)
         }
     }
     
-    func subscribeOnChanges() {
+    override func subscribeOnChanges() {
+        super.subscribeOnChanges()
+        
         
     }
 }

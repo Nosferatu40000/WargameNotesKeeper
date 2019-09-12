@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3567A0E232A8528007B425C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3567A0D232A8528007B425C /* SettingsView.swift */; };
+		A3567A10232A8537007B425C /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3567A0F232A8537007B425C /* SettingsViewModel.swift */; };
+		A3567A12232A8550007B425C /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3567A11232A8550007B425C /* SettingsInteractor.swift */; };
+		A3567A14232A8560007B425C /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3567A13232A8560007B425C /* SettingsRouter.swift */; };
+		A3567A16232A8578007B425C /* SettingsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3567A15232A8578007B425C /* SettingsAssembly.swift */; };
+		A3567A1A232A9BAA007B425C /* TableViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3567A19232A9BA9007B425C /* TableViewCellProtocol.swift */; };
+		A3567A1D232A9C7C007B425C /* GameSystemRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3567A1C232A9C7C007B425C /* GameSystemRowViewModel.swift */; };
+		A3567A1F232A9C90007B425C /* GameSystemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3567A1E232A9C90007B425C /* GameSystemTableViewCell.swift */; };
+		A3567A21232A9F20007B425C /* GameSystemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3567A20232A9F20007B425C /* GameSystemTableViewCell.xib */; };
+		A3567A23232AB098007B425C /* RoasterListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3567A22232AB098007B425C /* RoasterListRouter.swift */; };
+		A3567A25232AB21A007B425C /* ModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3567A24232AB21A007B425C /* ModuleRouter.swift */; };
 		A36700F4230AE94800806B45 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36700F3230AE94800806B45 /* DatabaseService.swift */; };
 		A39BA6EA230AFE7B00DEE288 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39BA6E9230AFE7B00DEE288 /* ServiceAssembly.swift */; };
 		A39BA6ED230B017400DEE288 /* GameSystemDatabaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39BA6EC230B017400DEE288 /* GameSystemDatabaseObject.swift */; };
@@ -16,7 +27,6 @@
 		A3A8ECB322B2A2CA00C55CB5 /* UnitListModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A8ECB222B2A2CA00C55CB5 /* UnitListModuleView.swift */; };
 		A3A8ECB522B2A2DB00C55CB5 /* UnitListModuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A8ECB422B2A2DB00C55CB5 /* UnitListModuleViewModel.swift */; };
 		A3A8ECB722B2A30700C55CB5 /* UnitListModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A8ECB622B2A30700C55CB5 /* UnitListModuleInteractor.swift */; };
-		A3A8ECB922B2A32B00C55CB5 /* UnitListModuleViewModel+RowsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A8ECB822B2A32B00C55CB5 /* UnitListModuleViewModel+RowsBuilder.swift */; };
 		A3A8ECBB22B2A34300C55CB5 /* UnitListModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A8ECBA22B2A34300C55CB5 /* UnitListModuleAssembly.swift */; };
 		A3A8ECBE22B2A4D500C55CB5 /* RowsBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A8ECBD22B2A4D500C55CB5 /* RowsBuilderProtocol.swift */; };
 		A3A8ECC222B2B46000C55CB5 /* ModuleConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A8ECC122B2B46000C55CB5 /* ModuleConfigurable.swift */; };
@@ -29,7 +39,6 @@
 		A3C6125C231D655000A514B5 /* RoasterListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6125B231D655000A514B5 /* RoasterListAssembly.swift */; };
 		A3C61261231D7DD400A514B5 /* PickerRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C61260231D7DD400A514B5 /* PickerRowCell.swift */; };
 		A3C61263231D7DFF00A514B5 /* PickerRowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3C61262231D7DFF00A514B5 /* PickerRowCell.xib */; };
-		A3C61265231D8AA100A514B5 /* RoasterListViewModel+RowsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C61264231D8AA100A514B5 /* RoasterListViewModel+RowsBuilder.swift */; };
 		A3DF97DC22AFF39200A59924 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DF97DB22AFF39200A59924 /* AppDelegate.swift */; };
 		A3DF97E122AFF39200A59924 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3DF97DF22AFF39200A59924 /* Main.storyboard */; };
 		A3DF97E322AFF39400A59924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3DF97E222AFF39400A59924 /* Assets.xcassets */; };
@@ -40,6 +49,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A3567A0D232A8528007B425C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A3567A0F232A8537007B425C /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		A3567A11232A8550007B425C /* SettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
+		A3567A13232A8560007B425C /* SettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		A3567A15232A8578007B425C /* SettingsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAssembly.swift; sourceTree = "<group>"; };
+		A3567A19232A9BA9007B425C /* TableViewCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellProtocol.swift; sourceTree = "<group>"; };
+		A3567A1C232A9C7C007B425C /* GameSystemRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSystemRowViewModel.swift; sourceTree = "<group>"; };
+		A3567A1E232A9C90007B425C /* GameSystemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSystemTableViewCell.swift; sourceTree = "<group>"; };
+		A3567A20232A9F20007B425C /* GameSystemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameSystemTableViewCell.xib; sourceTree = "<group>"; };
+		A3567A22232AB098007B425C /* RoasterListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoasterListRouter.swift; sourceTree = "<group>"; };
+		A3567A24232AB21A007B425C /* ModuleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleRouter.swift; sourceTree = "<group>"; };
 		A36700F3230AE94800806B45 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
 		A39BA6E9230AFE7B00DEE288 /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
 		A39BA6EC230B017400DEE288 /* GameSystemDatabaseObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSystemDatabaseObject.swift; sourceTree = "<group>"; };
@@ -49,7 +69,6 @@
 		A3A8ECB222B2A2CA00C55CB5 /* UnitListModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitListModuleView.swift; sourceTree = "<group>"; };
 		A3A8ECB422B2A2DB00C55CB5 /* UnitListModuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitListModuleViewModel.swift; sourceTree = "<group>"; };
 		A3A8ECB622B2A30700C55CB5 /* UnitListModuleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitListModuleInteractor.swift; sourceTree = "<group>"; };
-		A3A8ECB822B2A32B00C55CB5 /* UnitListModuleViewModel+RowsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UnitListModuleViewModel+RowsBuilder.swift"; sourceTree = "<group>"; };
 		A3A8ECBA22B2A34300C55CB5 /* UnitListModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitListModuleAssembly.swift; sourceTree = "<group>"; };
 		A3A8ECBD22B2A4D500C55CB5 /* RowsBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowsBuilderProtocol.swift; sourceTree = "<group>"; };
 		A3A8ECC122B2B46000C55CB5 /* ModuleConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleConfigurable.swift; sourceTree = "<group>"; };
@@ -62,7 +81,6 @@
 		A3C6125B231D655000A514B5 /* RoasterListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoasterListAssembly.swift; sourceTree = "<group>"; };
 		A3C61260231D7DD400A514B5 /* PickerRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerRowCell.swift; sourceTree = "<group>"; };
 		A3C61262231D7DFF00A514B5 /* PickerRowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerRowCell.xib; sourceTree = "<group>"; };
-		A3C61264231D8AA100A514B5 /* RoasterListViewModel+RowsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoasterListViewModel+RowsBuilder.swift"; sourceTree = "<group>"; };
 		A3DF97D822AFF39200A59924 /* WargameNotesKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WargameNotesKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3DF97DB22AFF39200A59924 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3DF97E022AFF39200A59924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -97,6 +115,28 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A3567A0C232A84F3007B425C /* SettingsModule */ = {
+			isa = PBXGroup;
+			children = (
+				A3567A0D232A8528007B425C /* SettingsView.swift */,
+				A3567A0F232A8537007B425C /* SettingsViewModel.swift */,
+				A3567A11232A8550007B425C /* SettingsInteractor.swift */,
+				A3567A13232A8560007B425C /* SettingsRouter.swift */,
+				A3567A15232A8578007B425C /* SettingsAssembly.swift */,
+			);
+			path = SettingsModule;
+			sourceTree = "<group>";
+		};
+		A3567A1B232A9C27007B425C /* GameSystemRow */ = {
+			isa = PBXGroup;
+			children = (
+				A3567A1C232A9C7C007B425C /* GameSystemRowViewModel.swift */,
+				A3567A1E232A9C90007B425C /* GameSystemTableViewCell.swift */,
+				A3567A20232A9F20007B425C /* GameSystemTableViewCell.xib */,
+			);
+			path = GameSystemRow;
+			sourceTree = "<group>";
+		};
 		A36700F2230AE91800806B45 /* Database */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,8 +160,8 @@
 			children = (
 				A39BA6F4230B087900DEE288 /* RoasterListViewController.swift */,
 				A39BA6F6230B093E00DEE288 /* RoasterListViewModel.swift */,
-				A3C61264231D8AA100A514B5 /* RoasterListViewModel+RowsBuilder.swift */,
 				A3C61259231D651D00A514B5 /* RoasterListInteractor.swift */,
+				A3567A22232AB098007B425C /* RoasterListRouter.swift */,
 				A3C6125B231D655000A514B5 /* RoasterListAssembly.swift */,
 			);
 			path = RoasterListModule;
@@ -132,7 +172,6 @@
 			children = (
 				A3A8ECB222B2A2CA00C55CB5 /* UnitListModuleView.swift */,
 				A3A8ECB422B2A2DB00C55CB5 /* UnitListModuleViewModel.swift */,
-				A3A8ECB822B2A32B00C55CB5 /* UnitListModuleViewModel+RowsBuilder.swift */,
 				A3A8ECB622B2A30700C55CB5 /* UnitListModuleInteractor.swift */,
 				A3A8ECBA22B2A34300C55CB5 /* UnitListModuleAssembly.swift */,
 			);
@@ -145,6 +184,7 @@
 				A3A8ECBD22B2A4D500C55CB5 /* RowsBuilderProtocol.swift */,
 				A3A8ECC122B2B46000C55CB5 /* ModuleConfigurable.swift */,
 				A3A8ECC322B2B64100C55CB5 /* RowViewModelProtocol.swift */,
+				A3567A19232A9BA9007B425C /* TableViewCellProtocol.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -157,6 +197,7 @@
 				A3A8ECCB22B2B8E200C55CB5 /* ViewController.swift */,
 				A39BA6E9230AFE7B00DEE288 /* ServiceAssembly.swift */,
 				A3C61255231D641600A514B5 /* RootNavigationViewController.swift */,
+				A3567A24232AB21A007B425C /* ModuleRouter.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -164,6 +205,7 @@
 		A3C6125D231D743A00A514B5 /* rows */ = {
 			isa = PBXGroup;
 			children = (
+				A3567A1B232A9C27007B425C /* GameSystemRow */,
 				A3C6125F231D7D2E00A514B5 /* pickerRow */,
 			);
 			path = rows;
@@ -226,6 +268,7 @@
 			children = (
 				A3A8ECC622B2B6B600C55CB5 /* Base */,
 				A3A8ECBC22B2A3B500C55CB5 /* Common */,
+				A3567A0C232A84F3007B425C /* SettingsModule */,
 				A39BA6F3230B084F00DEE288 /* RoasterListModule */,
 				A3A8ECB122B2A29600C55CB5 /* UnitListModule */,
 			);
@@ -309,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3C61263231D7DFF00A514B5 /* PickerRowCell.xib in Resources */,
+				A3567A21232A9F20007B425C /* GameSystemTableViewCell.xib in Resources */,
 				A3DF97E622AFF39400A59924 /* LaunchScreen.storyboard in Resources */,
 				A3DF97E322AFF39400A59924 /* Assets.xcassets in Resources */,
 				A3DF97E122AFF39200A59924 /* Main.storyboard in Resources */,
@@ -365,30 +409,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3C6125C231D655000A514B5 /* RoasterListAssembly.swift in Sources */,
+				A3567A25232AB21A007B425C /* ModuleRouter.swift in Sources */,
 				A3C6125A231D651D00A514B5 /* RoasterListInteractor.swift in Sources */,
 				A3A8ECCC22B2B8E200C55CB5 /* ViewController.swift in Sources */,
 				A39BA6EA230AFE7B00DEE288 /* ServiceAssembly.swift in Sources */,
+				A3567A16232A8578007B425C /* SettingsAssembly.swift in Sources */,
 				A3C61261231D7DD400A514B5 /* PickerRowCell.swift in Sources */,
-				A3C61265231D8AA100A514B5 /* RoasterListViewModel+RowsBuilder.swift in Sources */,
 				A3A8ECB522B2A2DB00C55CB5 /* UnitListModuleViewModel.swift in Sources */,
 				A3A8ECB322B2A2CA00C55CB5 /* UnitListModuleView.swift in Sources */,
 				A39BA6ED230B017400DEE288 /* GameSystemDatabaseObject.swift in Sources */,
 				A3DF97F322AFF91400A59924 /* String+Int.swift in Sources */,
 				A3A8ECCA22B2B6D700C55CB5 /* ModuleViewModel.swift in Sources */,
+				A3567A1A232A9BAA007B425C /* TableViewCellProtocol.swift in Sources */,
 				A3A8ECBE22B2A4D500C55CB5 /* RowsBuilderProtocol.swift in Sources */,
 				A36700F4230AE94800806B45 /* DatabaseService.swift in Sources */,
 				A39BA6F7230B093E00DEE288 /* RoasterListViewModel.swift in Sources */,
+				A3567A23232AB098007B425C /* RoasterListRouter.swift in Sources */,
+				A3567A1F232A9C90007B425C /* GameSystemTableViewCell.swift in Sources */,
 				A39BA6F5230B087900DEE288 /* RoasterListViewController.swift in Sources */,
 				A3A8ECB722B2A30700C55CB5 /* UnitListModuleInteractor.swift in Sources */,
+				A3567A0E232A8528007B425C /* SettingsView.swift in Sources */,
 				A3DF97F122AFF8EF00A59924 /* Operands.swift in Sources */,
+				A3567A14232A8560007B425C /* SettingsRouter.swift in Sources */,
 				A3A8ECBB22B2A34300C55CB5 /* UnitListModuleAssembly.swift in Sources */,
 				A39BA6F9230B0A1A00DEE288 /* RoasterDatabaseObject.swift in Sources */,
 				A3C61256231D641600A514B5 /* RootNavigationViewController.swift in Sources */,
 				A3A8ECC822B2B6B600C55CB5 /* Assembly.swift in Sources */,
+				A3567A10232A8537007B425C /* SettingsViewModel.swift in Sources */,
+				A3567A1D232A9C7C007B425C /* GameSystemRowViewModel.swift in Sources */,
 				A3DF97DC22AFF39200A59924 /* AppDelegate.swift in Sources */,
 				A3A8ECC222B2B46000C55CB5 /* ModuleConfigurable.swift in Sources */,
 				A3A8ECC422B2B64100C55CB5 /* RowViewModelProtocol.swift in Sources */,
-				A3A8ECB922B2A32B00C55CB5 /* UnitListModuleViewModel+RowsBuilder.swift in Sources */,
+				A3567A12232A8550007B425C /* SettingsInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

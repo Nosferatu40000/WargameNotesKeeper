@@ -30,6 +30,7 @@ extension Assembly {
             
             viewModel.interactor = assembly.resolve(RoasterListInteractor.self)
             viewModel.database = ServiceAssembly.databaseService()
+            viewModel.router = assembly.resolve(RoasterListRouter.self)
             
             return viewModel
             }.inObjectScope(.weak)
@@ -38,6 +39,12 @@ extension Assembly {
             
             let interactor = RoasterListInteractor()
             return interactor
+            }.inObjectScope(.weak)
+        
+        container.register(RoasterListRouter.self) {_ in RoasterListRouter()}.initCompleted {assembly, router in
+            
+            router.settingsModuleFactory = Assembly.settingsModuleFactory()
+            router.currentViewController = assembly.resolve(RoasterListViewController.self)
             }.inObjectScope(.weak)
         
         container.register(Assembly.self) { a in

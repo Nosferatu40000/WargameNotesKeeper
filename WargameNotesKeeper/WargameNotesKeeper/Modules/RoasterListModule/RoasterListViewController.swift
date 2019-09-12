@@ -26,15 +26,21 @@ class RoasterListViewController: UIViewController, UIPickerViewDelegate, UIPicke
         view.backgroundColor = .white
         addPicker()
         viewModel.viewLoaded()
+        
+        title = viewModel.moduleTitle
+        navigationItem.rightBarButtonItems = viewModel.rightHeaderButtons
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        viewModel.viewAppeared()
     }
     
     func subscribeOnChanges() {
         
-        let myBehaviorRelay = BehaviorRelay<Bool>(value: true)
-        myBehaviorRelay.accept(false)
         BehaviorRelay<[RoasterDatabaseObject]>(value: viewModel.roasters).asObservable().subscribe(onNext: { [weak self] (_) in
             
-            self?.viewModel.buldRows()
             self?.picker.reloadAllComponents()
         }).disposed(by: DisposeBag())
     }
@@ -66,7 +72,7 @@ class RoasterListViewController: UIViewController, UIPickerViewDelegate, UIPicke
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return viewModel.rows.count
+        return viewModel.roasters.count + 1
     }
     
     func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
@@ -76,15 +82,61 @@ class RoasterListViewController: UIViewController, UIPickerViewDelegate, UIPicke
     //MARK: UIPickerViewDelegate
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
         
-        let view = viewModel.rows[row]
-        view.frame = CGRect(x: 0.0, y: 0.0, width: pickerView.frame.width - 150.0, height: pickerView.frame.height - 150.0)
-        view.transform = CGAffineTransform(rotationAngle: -.pi/2)
+        if viewModel.roasters.count > row {
+            return roasterRow(viewModel.roasters[row])
+        }
         
-        return view
+        return addNewRoasterRow()
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
         viewModel.didSelectRoaster(row)
+    }
+    
+    func addNewRoasterRow() -> UIView {
+        
+        let view = UIView(frame: CGRect(x: 0.0, y: 0.0, width: picker.frame.width - 150.0, height: picker.frame.height - 150.0))
+        
+        view.backgroundColor = UIColor.lightGray.withAlphaComponent(0.6)
+        view.layer.cornerRadius = 8.0
+        
+        let imageView = UIImageView(frame: .zero)
+        
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(imageView)
+        
+        imageView.heightAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.3).isActive = true
+        imageView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.3).isActive = true
+        imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        
+        imageView.image = UIImage(named: "Add")
+        
+        view.transform = CGAffineTransform(rotationAngle: -.pi/2)
+        
+        return view
+    }
+    
+    func roasterRow(_ roaster: RoasterDatabaseObject) -> UIView {
+        
+        let view : PickerRowCell = Bundle.main.loadNibNamed(String(describing: PickerRowCell.self),
+                                                            owner: nil,
+                                                            options: nil)?.first as! PickerRowCell
+        view.setCorner(8.0)
+        view.roasterNameLabel.text = roaster.name
+        view.gameSystemLabel.text = roaster.gameSystem?.name
+        
+        if let data = roaster.gameSystem?.imageData {
+            
+            view.backgroundImageView.image = UIImage(data: data)
+        } else {
+            
+            view.backgroundImageView.image = UIImage(named: "placeholder")
+        }
+        view.frame = CGRect(x: 0.0, y: 0.0, width: picker.frame.width - 150.0, height: picker.frame.height - 150.0)
+        view.transform = CGAffineTransform(rotationAngle: -.pi/2)
+        
+        return view
     }
 }
