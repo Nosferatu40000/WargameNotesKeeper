@@ -7,15 +7,24 @@
 //
 
 import Foundation
+import UIKit
+import RealmSwift
 
 class UnitListModuleViewModel: ModuleViewModel {
     
+    var moduleTitle: String = "Units"
+    var rightHeaderButtons: [UIBarButtonItem] = []
+    var leftHeaderButtons: [UIBarButtonItem] = []
+    var placeholder: UIImage?
+    
     var interactor: UnitListModuleInteractor!
-
+    var database: DatabaseService!
+    
+    var dataObjects: [Object] = []
+    
     // MARK: ModuleViewModel
-    var rowViewModels: [RowViewModel]?
-    func updateRows() {
-        buldRows()
+    func viewLoaded() {
+        
     }
     
     

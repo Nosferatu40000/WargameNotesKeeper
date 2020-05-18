@@ -7,9 +7,16 @@
 //
 
 import Foundation
+import UIKit
+import RealmSwift
 
 protocol ModuleViewModel {
     
-    var rowViewModels: [RowViewModel]? { get set }
-    func updateRows()
+    var moduleTitle: String { get set }
+    var rightHeaderButtons: [UIBarButtonItem] { get set }
+    var leftHeaderButtons: [UIBarButtonItem] { get set }
+    var placeholder: UIImage? { get set }
+    var dataObjects: [Object] { get set }
+    
+    func viewLoaded()
 }

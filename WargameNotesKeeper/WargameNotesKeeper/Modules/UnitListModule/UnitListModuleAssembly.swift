@@ -29,6 +29,7 @@ extension Assembly {
             let viewModel = UnitListModuleViewModel()
             
             viewModel.interactor = assembly.resolve(UnitListModuleInteractor.self)
+            viewModel.database = ServiceAssembly.databaseService()
             
             return viewModel
         }.inObjectScope(.weak)

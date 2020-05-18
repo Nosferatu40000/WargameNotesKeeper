@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="66" id="VaT-ra-lWo" customClass="GameSystemTableViewCell" customModule="WargameNotesKeeper" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="419" height="66"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VaT-ra-lWo" id="Obo-N1-HoL">
+                <rect key="frame" x="0.0" y="0.0" width="419" height="65.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nx2-xG-Nqb">
+                        <rect key="frame" x="5" y="5.5" width="409" height="56"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1OI-sx-X7S">
+                                <rect key="frame" x="0.0" y="-20.5" width="259" height="96.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GameSystem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TqW-NY-Rl9">
+                                <rect key="frame" x="45" y="9" width="364" height="21.5"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="JNV-0p-4rb"/>
+                            <constraint firstAttribute="trailing" secondItem="1OI-sx-X7S" secondAttribute="trailing" constant="150" id="Jt7-Qg-umi"/>
+                            <constraint firstItem="TqW-NY-Rl9" firstAttribute="leading" secondItem="nx2-xG-Nqb" secondAttribute="leading" constant="45" id="ORp-kF-h5b"/>
+                            <constraint firstItem="1OI-sx-X7S" firstAttribute="top" secondItem="nx2-xG-Nqb" secondAttribute="top" constant="-20" id="WQD-Oq-7F8"/>
+                            <constraint firstAttribute="bottom" secondItem="1OI-sx-X7S" secondAttribute="bottom" constant="-20" id="bF3-Js-aiy"/>
+                            <constraint firstAttribute="trailing" secondItem="TqW-NY-Rl9" secondAttribute="trailing" id="h9G-yh-tLF"/>
+                            <constraint firstItem="TqW-NY-Rl9" firstAttribute="top" secondItem="nx2-xG-Nqb" secondAttribute="top" constant="9" id="jHx-z8-8am"/>
+                            <constraint firstItem="1OI-sx-X7S" firstAttribute="leading" secondItem="nx2-xG-Nqb" secondAttribute="leading" id="xbO-PS-Ogl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="nx2-xG-Nqb" secondAttribute="bottom" constant="5" id="2oy-dF-Rt0"/>
+                    <constraint firstItem="nx2-xG-Nqb" firstAttribute="top" secondItem="Obo-N1-HoL" secondAttribute="top" constant="5" id="Nuj-My-LNN"/>
+                    <constraint firstItem="nx2-xG-Nqb" firstAttribute="leading" secondItem="Obo-N1-HoL" secondAttribute="leading" constant="5" id="Udg-e7-uap"/>
+                    <constraint firstAttribute="trailing" secondItem="nx2-xG-Nqb" secondAttribute="trailing" constant="5" id="XGi-Hq-GLg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backGroundView" destination="nx2-xG-Nqb" id="ZgN-dk-uS0"/>
+                <outlet property="systemImageView" destination="1OI-sx-X7S" id="ZNJ-ft-0Nc"/>
+                <outlet property="systemTitle" destination="TqW-NY-Rl9" id="eok-WE-BlQ"/>
+            </connections>
+            <point key="canvasLocation" x="341.304347826087" y="18.080357142857142"/>
+        </tableViewCell>
+    </objects>
+</document>

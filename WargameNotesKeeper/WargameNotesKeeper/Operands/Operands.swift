@@ -28,7 +28,7 @@ func >->> <T>(array: inout Array<T>, item: Int) {
 }
 
 infix operator  >>>
-func >>> <T>(array: inout Array<T>, item: Int) -> T? {
+func >>> <T>(array: Array<T>, item: Int) -> T? {
     
     if array.count <= item {
         return nil
