@@ -43,6 +43,8 @@ class SettingsViewModel: ModuleViewModel {
         addNewButton.heightAnchor.constraint(equalToConstant: 44.0).isActive = true
         addNewButton.widthAnchor.constraint(equalToConstant: 44.0).isActive = true
         
+        addNewButton.contentEdgeInsets = UIEdgeInsets(top: 8.0, left: 8.0, bottom: 8.0, right: 8.0)
+        
         addNewButton.addTarget(self, action: #selector(addGameSystem), for: .touchUpInside)
         rightHeaderButtons = [UIBarButtonItem.init(customView: addNewButton)]
     }
